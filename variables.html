@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Variables</title>
+</head>
+<body>
+	<form action="">
+		<input type="text" id="numero1">
+		<input type="text" id="numero2">
+		<input type="button" value="sumar" onclick="alert(suma(10,50));">		
+	</form>
+	<script>
+	(function(){
+		var suma=function(numer1,numero2){
+			var numero1=parseFloat(document.getElementById("numero1").value);
+			var numero2=parseFloat(document.getElementById("numero2").value);
+
+			var resultado=numero1+numero2;
+			return resultado;
+		}
+		//var nombre="carlos";
+		//nombre=prompt("Ingresa tu nombre","Valor");	
+		//edad=19+1;
+		//edad="hola"
+		//edad=edad+1;
+		//edad =prompt("Ingrese tu edad","Valor");
+		//document.write(nombre+edad);
+		//document.write(nombre+" "+edad);
+		//alert(nombre);
+		//var amigos=["carlos","alejandro","cesar"]
+		//document.write(amigos[2])
+		//var luis="jejeje";		
+		//document.write(luis*3);
+		//var objeto{
+		//	color:"Black",
+		//	size: 12
+		//}
+		//var amigos = ["1","2","3"];
+		//amigos[0]="arturo";
+		//amigos[amigos.length]="4";		
+		//var persona=["5","6","7"];
+		//amigos.push("8","9","10","11");
+		//var amigos2=amigos.concat(persona);
+		//document.write(amigos2.join(" | "));
+		//document.write("\n"+amigos2.reverse());
+		//for (var i = 0; i < 10; i=i+2) {
+		//	document.write(i+"<br>");
+		//}
+		//function saludo(nombre){
+		//	return nombre;
+		//}
+		//var nombre;
+		//var nombre1;
+		//nombre=prompt("nombre","valor");
+		//nombre1=saludo(nombre);
+		var texto="ABCDEFGHIJK";
+		var nuevoTexto=texto.toLowerCase("c");
+		//var texto2=texto.indexOf("c",nuevoTexto);
+		document.write(nuevoTexto);
+	}())
+		
+	</script>
+</body>
+</html>
