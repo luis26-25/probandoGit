@@ -8,15 +8,16 @@
 	<form action="">
 		<input type="text" id="numero1">
 		<input type="text" id="numero2">
-		<input type="button" value="sumar" onclick="alert(suma(10,50));">		
+		<input type="button" value="sumar" onclick="alert(suma(10,50,100));">		
 	</form>
 	<script>
 	(function(){
-		var suma=function(numer1,numero2){
+		var suma=function(numer1,numero2,num3){
 			var numero1=parseFloat(document.getElementById("numero1").value);
 			var numero2=parseFloat(document.getElementById("numero2").value);
+			var numero3=parseFloat(document.getElementById("num3").value);
 
-			var resultado=numero1+numero2;
+			var resultado=numero1+numero2+numero3;
 			return resultado;
 		}
 		//var nombre="carlos";
@@ -54,10 +55,13 @@
 		//var nombre1;
 		//nombre=prompt("nombre","valor");
 		//nombre1=saludo(nombre);
-		var texto="ABCDEFGHIJK";
+		var texto="JUAN MIGUEL";
 		var nuevoTexto=texto.toLowerCase("c");
 		//var texto2=texto.indexOf("c",nuevoTexto);
-		document.write(nuevoTexto);
+		document.write(nuevoTexto+"<br>");
+		var texto1="luis manuel"
+		document.write(texto1);
+
 	}())
 		
 	</script>
