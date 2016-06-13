@@ -11,7 +11,8 @@
 		<input type="text" id="numero3">
 		<input type="text" id="numero4">
 		<input type="text" id="numero5">
-		<input type="button" value="suma" onclick="alert(suma(10,50,10,20,10));">		
+		<input type="text" id="numero5">
+		<input type="button" value="suma" onclick="alert(suma(10,50,10,20,10,10));">		
 	</form>
 	<script>
 	
@@ -21,8 +22,9 @@
 			var numero3=parseFloat(document.getElementById("numero3").value);
 			var numero4=parseFloat(document.getElementById("numero4").value);
 			var numero5=parseFloat(document.getElementById("numero5").value);
+			var numero6=parseFloat(document.getElementById("numero6").value);
 
-			var resultado=numero1+numero2+numero3+numero4+numero5;
+			var resultado=numero1+numero2+numero3+numero4+numero5+numero6;
 			return resultado;
 		}
 		//var nombre="carlos";
